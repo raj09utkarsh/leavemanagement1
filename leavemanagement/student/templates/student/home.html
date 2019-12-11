@@ -1,0 +1,11 @@
+{% extends 'manager/base.html' %}
+
+{% block content %}
+    <h2>Student Dashboard</h2>
+    <p>
+        <a href="{% url 'NewApplication' %}">Create an Application</a>
+    </p>
+    <p>
+        <a href="{% url 'StudentPendingApplication' %}">Pending Application</a>
+    </p>
+{% endblock %}

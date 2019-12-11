@@ -1,0 +1,9 @@
+{% extends 'manager/base.html' %}
+
+{% block content %}
+    {% for application in applications %}
+        <p>
+            {{application.description}} {{application.dateAdded}} {{application.faculty}}
+        </p>
+    {% endfor %}
+{% endblock %}
